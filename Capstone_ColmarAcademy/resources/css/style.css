@@ -1,0 +1,320 @@
+/*Note: Need to change headings to span due to the defualt padding.*/
+
+/* Universal Styling*/
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #4a4a4a;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: dimgray;
+}
+
+h3 {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: darkgray;
+}
+
+h4 {
+  font-size: 0.75rem;
+  color: darkgray;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.content {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.left-content {
+  width: 60%;
+  overflow: hidden;
+  margin: 2rem 1.5rem;
+}
+
+.right-content {
+  width: 40%;
+  padding-top: 1rem;
+}
+
+.feature {
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.feature .image-container {
+  width: 35%;
+  overflow: hidden;
+}
+
+.feature .text-content {
+  margin-left: 1rem;
+  width: 65%;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .desktop {
+    display: none;
+  }
+}
+
+/* Header Styling*/
+header .logo {
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#colmar {
+  color: #4a4a4a;
+}
+
+#academy {
+  color: darkgray;
+}
+
+ul a {
+  color: dimgray;
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+/* Banner Styling */
+.banner {
+  background-color: #F0F0F0;
+  align-items: center;
+}
+
+.banner .right-content {
+  padding-top: 0;
+  flex-direction: column;
+}
+
+.banner .right-content h2 {
+  margin: 2rem 0;
+}
+
+.banner .button {
+  width: 83%;
+  background-color: #4a4a4a;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.banner .button a {
+  color: white;
+  font-size: 1.3rem;
+  margin: 0.5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    display: block;
+    max-width: 100%;
+  }
+
+  .banner .left-content {
+    width: 100%;
+    margin: auto;
+  }
+
+  .banner .right-content {
+    display: block;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .banner .text-content {
+    padding: 0 1rem;
+  }
+
+  .banner .button {
+    width: 100%
+  }
+}
+
+/* Information Styling */
+.information .left-content .text-content {
+  margin: 2rem 0;
+}
+
+.information .left-content h3 {
+  margin: 1.5rem 0;
+}
+
+.information .right-content {
+  border-left: 0.0625rem solid #F0F0F0;
+}
+
+.information .right-content .feature:last-child{
+  background-color: #F0F0F0;
+}
+
+.information a {
+  color: rgb(10, 165, 225)
+}
+
+@media only screen and (max-width: 470px) {
+  .information .right-content {
+    display: block;
+    width: 100%;
+    padding: 0 0 1rem 0;
+  }
+
+  .information .feature {
+    display: block;
+    max-width: 100%;
+  }
+
+  .information .right-content .feature:last-child{
+    background-color: white;
+  }
+
+  .information .image-container {
+    display: block;
+    width: 100%;
+  }
+
+  .information .text-content {
+    padding-top: 2rem;
+  }
+}
+
+/* Academics Styling */
+.academics {
+  background-color: #F0F0F0;
+}
+
+.academics h1 {
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+}
+
+.majors-container {
+  padding: 0 3.5rem 2rem 3.5rem;
+}
+
+.major {
+  flex-direction: column;
+  margin: 0 1rem;
+  width: 100%;
+  background-color: white;
+}
+
+.major .image-container {
+  height: auto;
+}
+
+.major .text-content {
+  margin: 1rem 2rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .academics {
+    display: block;
+    background-color: white;
+    padding-bottom: 1rem;
+    border: 0.0625rem solid #F0F0F0;
+  }
+
+  .academics .mobile {
+    display: block;
+  }
+
+  .academics .mobile div {
+    background-color: #F0F0F0;
+    margin:0 1rem 0.5rem 1rem;
+    padding: 2rem 0;
+  }
+
+  .academics .mobile h2 {
+    margin-left: 1rem;
+  }
+}
+
+/* Thesis Styling */
+.thesis h1 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.thesis video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thesis .left-content h2 {
+  margin-top: 2rem;
+}
+
+.thesis .right-content .feature:first-child {
+  margin-top: 1rem;
+  background-color: #F0F0F0;
+}
+
+@media only screen and (max-width: 470px) {
+  .thesis {
+    margin-bottom: 2rem;
+  }
+
+  .thesis h1 {
+    padding-bottom: 2rem;
+  }
+}
+
+/* Footer Styling */
+footer {
+  border-top: 0.0625rem solid #F0F0F0;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    border-top: none;
+  }
+}
